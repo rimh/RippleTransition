@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A12AC1E1CE09E7700ABBFFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A12AC1D1CE09E7700ABBFFC /* AppDelegate.swift */; };
+		3A12AC201CE09E7700ABBFFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A12AC1F1CE09E7700ABBFFC /* ViewController.swift */; };
+		3A12AC231CE09E7700ABBFFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A12AC211CE09E7700ABBFFC /* Main.storyboard */; };
+		3A12AC251CE09E7700ABBFFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A12AC241CE09E7700ABBFFC /* Assets.xcassets */; };
+		3A12AC281CE09E7700ABBFFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A12AC261CE09E7700ABBFFC /* LaunchScreen.storyboard */; };
+		3A12AC331CE09E7800ABBFFC /* RippleTransitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A12AC321CE09E7800ABBFFC /* RippleTransitionTests.swift */; };
+		3A12AC3E1CE09E7800ABBFFC /* RippleTransitionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A12AC3D1CE09E7800ABBFFC /* RippleTransitionUITests.swift */; };
+		3A12AC4C1CE09E8D00ABBFFC /* RippleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A12AC4B1CE09E8D00ABBFFC /* RippleTransition.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A12AC2F1CE09E7800ABBFFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A12AC121CE09E7700ABBFFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A12AC191CE09E7700ABBFFC;
+			remoteInfo = RippleTransition;
+		};
+		3A12AC3A1CE09E7800ABBFFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A12AC121CE09E7700ABBFFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A12AC191CE09E7700ABBFFC;
+			remoteInfo = RippleTransition;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A12AC1A1CE09E7700ABBFFC /* RippleTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RippleTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A12AC1D1CE09E7700ABBFFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A12AC1F1CE09E7700ABBFFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A12AC221CE09E7700ABBFFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A12AC241CE09E7700ABBFFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A12AC271CE09E7700ABBFFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A12AC291CE09E7700ABBFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A12AC2E1CE09E7800ABBFFC /* RippleTransitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RippleTransitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A12AC321CE09E7800ABBFFC /* RippleTransitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RippleTransitionTests.swift; sourceTree = "<group>"; };
+		3A12AC341CE09E7800ABBFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A12AC391CE09E7800ABBFFC /* RippleTransitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RippleTransitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A12AC3D1CE09E7800ABBFFC /* RippleTransitionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RippleTransitionUITests.swift; sourceTree = "<group>"; };
+		3A12AC3F1CE09E7800ABBFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A12AC4B1CE09E8D00ABBFFC /* RippleTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RippleTransition.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A12AC171CE09E7700ABBFFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A12AC2B1CE09E7800ABBFFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A12AC361CE09E7800ABBFFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A12AC111CE09E7700ABBFFC = {
+			isa = PBXGroup;
+			children = (
+				3A12AC1C1CE09E7700ABBFFC /* RippleTransition */,
+				3A12AC311CE09E7800ABBFFC /* RippleTransitionTests */,
+				3A12AC3C1CE09E7800ABBFFC /* RippleTransitionUITests */,
+				3A12AC1B1CE09E7700ABBFFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A12AC1B1CE09E7700ABBFFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A12AC1A1CE09E7700ABBFFC /* RippleTransition.app */,
+				3A12AC2E1CE09E7800ABBFFC /* RippleTransitionTests.xctest */,
+				3A12AC391CE09E7800ABBFFC /* RippleTransitionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A12AC1C1CE09E7700ABBFFC /* RippleTransition */ = {
+			isa = PBXGroup;
+			children = (
+				3A12AC1D1CE09E7700ABBFFC /* AppDelegate.swift */,
+				3A12AC1F1CE09E7700ABBFFC /* ViewController.swift */,
+				3A12AC211CE09E7700ABBFFC /* Main.storyboard */,
+				3A12AC241CE09E7700ABBFFC /* Assets.xcassets */,
+				3A12AC261CE09E7700ABBFFC /* LaunchScreen.storyboard */,
+				3A12AC291CE09E7700ABBFFC /* Info.plist */,
+				3A12AC4B1CE09E8D00ABBFFC /* RippleTransition.swift */,
+			);
+			path = RippleTransition;
+			sourceTree = "<group>";
+		};
+		3A12AC311CE09E7800ABBFFC /* RippleTransitionTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A12AC321CE09E7800ABBFFC /* RippleTransitionTests.swift */,
+				3A12AC341CE09E7800ABBFFC /* Info.plist */,
+			);
+			path = RippleTransitionTests;
+			sourceTree = "<group>";
+		};
+		3A12AC3C1CE09E7800ABBFFC /* RippleTransitionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A12AC3D1CE09E7800ABBFFC /* RippleTransitionUITests.swift */,
+				3A12AC3F1CE09E7800ABBFFC /* Info.plist */,
+			);
+			path = RippleTransitionUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A12AC191CE09E7700ABBFFC /* RippleTransition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A12AC421CE09E7800ABBFFC /* Build configuration list for PBXNativeTarget "RippleTransition" */;
+			buildPhases = (
+				3A12AC161CE09E7700ABBFFC /* Sources */,
+				3A12AC171CE09E7700ABBFFC /* Frameworks */,
+				3A12AC181CE09E7700ABBFFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RippleTransition;
+			productName = RippleTransition;
+			productReference = 3A12AC1A1CE09E7700ABBFFC /* RippleTransition.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A12AC2D1CE09E7800ABBFFC /* RippleTransitionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A12AC451CE09E7800ABBFFC /* Build configuration list for PBXNativeTarget "RippleTransitionTests" */;
+			buildPhases = (
+				3A12AC2A1CE09E7800ABBFFC /* Sources */,
+				3A12AC2B1CE09E7800ABBFFC /* Frameworks */,
+				3A12AC2C1CE09E7800ABBFFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A12AC301CE09E7800ABBFFC /* PBXTargetDependency */,
+			);
+			name = RippleTransitionTests;
+			productName = RippleTransitionTests;
+			productReference = 3A12AC2E1CE09E7800ABBFFC /* RippleTransitionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A12AC381CE09E7800ABBFFC /* RippleTransitionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A12AC481CE09E7800ABBFFC /* Build configuration list for PBXNativeTarget "RippleTransitionUITests" */;
+			buildPhases = (
+				3A12AC351CE09E7800ABBFFC /* Sources */,
+				3A12AC361CE09E7800ABBFFC /* Frameworks */,
+				3A12AC371CE09E7800ABBFFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A12AC3B1CE09E7800ABBFFC /* PBXTargetDependency */,
+			);
+			name = RippleTransitionUITests;
+			productName = RippleTransitionUITests;
+			productReference = 3A12AC391CE09E7800ABBFFC /* RippleTransitionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A12AC121CE09E7700ABBFFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Sleepy Sheep - Ming";
+				TargetAttributes = {
+					3A12AC191CE09E7700ABBFFC = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					3A12AC2D1CE09E7800ABBFFC = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 3A12AC191CE09E7700ABBFFC;
+					};
+					3A12AC381CE09E7800ABBFFC = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 3A12AC191CE09E7700ABBFFC;
+					};
+				};
+			};
+			buildConfigurationList = 3A12AC151CE09E7700ABBFFC /* Build configuration list for PBXProject "RippleTransition" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A12AC111CE09E7700ABBFFC;
+			productRefGroup = 3A12AC1B1CE09E7700ABBFFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A12AC191CE09E7700ABBFFC /* RippleTransition */,
+				3A12AC2D1CE09E7800ABBFFC /* RippleTransitionTests */,
+				3A12AC381CE09E7800ABBFFC /* RippleTransitionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A12AC181CE09E7700ABBFFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A12AC281CE09E7700ABBFFC /* LaunchScreen.storyboard in Resources */,
+				3A12AC251CE09E7700ABBFFC /* Assets.xcassets in Resources */,
+				3A12AC231CE09E7700ABBFFC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A12AC2C1CE09E7800ABBFFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A12AC371CE09E7800ABBFFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A12AC161CE09E7700ABBFFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A12AC201CE09E7700ABBFFC /* ViewController.swift in Sources */,
+				3A12AC1E1CE09E7700ABBFFC /* AppDelegate.swift in Sources */,
+				3A12AC4C1CE09E8D00ABBFFC /* RippleTransition.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A12AC2A1CE09E7800ABBFFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A12AC331CE09E7800ABBFFC /* RippleTransitionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A12AC351CE09E7800ABBFFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A12AC3E1CE09E7800ABBFFC /* RippleTransitionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A12AC301CE09E7800ABBFFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A12AC191CE09E7700ABBFFC /* RippleTransition */;
+			targetProxy = 3A12AC2F1CE09E7800ABBFFC /* PBXContainerItemProxy */;
+		};
+		3A12AC3B1CE09E7800ABBFFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A12AC191CE09E7700ABBFFC /* RippleTransition */;
+			targetProxy = 3A12AC3A1CE09E7800ABBFFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A12AC211CE09E7700ABBFFC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A12AC221CE09E7700ABBFFC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A12AC261CE09E7700ABBFFC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A12AC271CE09E7700ABBFFC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A12AC401CE09E7800ABBFFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A12AC411CE09E7800ABBFFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A12AC431CE09E7800ABBFFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RippleTransition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unknown.RippleTransition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3A12AC441CE09E7800ABBFFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RippleTransition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unknown.RippleTransition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3A12AC461CE09E7800ABBFFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RippleTransitionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unknown.RippleTransitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RippleTransition.app/RippleTransition";
+			};
+			name = Debug;
+		};
+		3A12AC471CE09E7800ABBFFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RippleTransitionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unknown.RippleTransitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RippleTransition.app/RippleTransition";
+			};
+			name = Release;
+		};
+		3A12AC491CE09E7800ABBFFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RippleTransitionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unknown.RippleTransitionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RippleTransition;
+			};
+			name = Debug;
+		};
+		3A12AC4A1CE09E7800ABBFFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RippleTransitionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unknown.RippleTransitionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RippleTransition;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A12AC151CE09E7700ABBFFC /* Build configuration list for PBXProject "RippleTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A12AC401CE09E7800ABBFFC /* Debug */,
+				3A12AC411CE09E7800ABBFFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A12AC421CE09E7800ABBFFC /* Build configuration list for PBXNativeTarget "RippleTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A12AC431CE09E7800ABBFFC /* Debug */,
+				3A12AC441CE09E7800ABBFFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A12AC451CE09E7800ABBFFC /* Build configuration list for PBXNativeTarget "RippleTransitionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A12AC461CE09E7800ABBFFC /* Debug */,
+				3A12AC471CE09E7800ABBFFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A12AC481CE09E7800ABBFFC /* Build configuration list for PBXNativeTarget "RippleTransitionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A12AC491CE09E7800ABBFFC /* Debug */,
+				3A12AC4A1CE09E7800ABBFFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A12AC121CE09E7700ABBFFC /* Project object */;
+}
