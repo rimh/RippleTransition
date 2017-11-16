@@ -9,22 +9,22 @@
 import Foundation
 import UIKit
 
-class RippleTransition : NSObject, UIViewControllerAnimatedTransitioning {
+class RippleTransition : NSObject, UIViewControllerAnimatedTransitioning, CAAnimationDelegate {
     
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
-        return 4.0
+    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+        return 5.0
     }
     
     weak var transitionContext:UIViewControllerContextTransitioning?
     
-    func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
+    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         self.transitionContext = transitionContext
-        guard let containerView = transitionContext.containerView() else { return }
-        guard let fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey) else { return }
-        guard let toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey) else { return }
+        let containerView = transitionContext.containerView
+        guard let fromViewController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from) else { return }
+        guard let toViewController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to) else { return }
         
         containerView.addSubview(toViewController.view)
-        containerView.bringSubviewToFront(fromViewController.view)
+        containerView.bringSubview(toFront: fromViewController.view)
         
         CATransaction.begin()
         rippleAnimation(fromViewController.view)
@@ -32,32 +32,32 @@ class RippleTransition : NSObject, UIViewControllerAnimatedTransitioning {
         CATransaction.commit()
     }
     
-    private func rippleAnimation(view:UIView)
+    fileprivate func rippleAnimation(_ view:UIView)
     {
         let animation = CATransition()
         animation.delegate = self
-        animation.duration = self.transitionDuration(transitionContext)
+        animation.duration = self.transitionDuration(using: transitionContext)
         animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
         animation.type = "rippleEffect"
         animation.beginTime = 0
-        view.layer.addAnimation(animation, forKey: nil)
+        view.layer.add(animation, forKey: nil)
     }
     
-    private func fadeOutAnimation(view:UIView)
+    fileprivate func fadeOutAnimation(_ view:UIView)
     {
         let animation : CABasicAnimation = CABasicAnimation(keyPath: "opacity");
         animation.fromValue = 1
         animation.toValue = 0
         animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
         animation.fillMode = kCAFillModeForwards
-        animation.removedOnCompletion = false
-        animation.duration = self.transitionDuration(transitionContext)/2
-        animation.beginTime = self.transitionDuration(transitionContext)/2
-        view.layer.addAnimation(animation, forKey: nil)
+        animation.isRemovedOnCompletion = false
+        animation.duration = self.transitionDuration(using: transitionContext)/2
+        animation.beginTime = self.transitionDuration(using: transitionContext)/2
+        view.layer.add(animation, forKey: nil)
     }
-
-    override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
+    
+    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
         guard let transitionContext = self.transitionContext else { return }
-        transitionContext.completeTransition(!transitionContext.transitionWasCancelled())
+        transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
     }
 }
