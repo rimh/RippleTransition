@@ -1,6 +1,6 @@
 # RippleTransition
 
-Combine Ripple Effect and Fade Out to make animation transition
+Combine Ripple Effect and Fade Out to make animation transition.
 
 ## Requirement
 Xcode 9, Swift 4, iOS 8 or above
