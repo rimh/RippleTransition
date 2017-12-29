@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "RippleTransition"
-  s.version      = "1.0"
+  s.version      = "1.0.1"
   s.summary      = "A simple transition with native ripple effect."
 
   s.description  = 'A simple transition with native ripple effect. It is a combination between ripple and fade-out effect.'
@@ -19,7 +19,5 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/rimh/RippleTransition.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
-
   s.source_files = 'RippleTransition/RippleTransition.swift'
-
 end
