@@ -28,15 +28,15 @@
 import Foundation
 import UIKit
 
-class RippleTransition : NSObject, UIViewControllerAnimatedTransitioning, CAAnimationDelegate {
+public class RippleTransition : NSObject, UIViewControllerAnimatedTransitioning, CAAnimationDelegate {
     
-    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+    public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 5.0
     }
     
     weak var transitionContext:UIViewControllerContextTransitioning?
     
-    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+    public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         self.transitionContext = transitionContext
         let containerView = transitionContext.containerView
         guard let fromViewController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from) else { return }
@@ -75,7 +75,7 @@ class RippleTransition : NSObject, UIViewControllerAnimatedTransitioning, CAAnim
         view.layer.add(animation, forKey: nil)
     }
     
-    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+    public func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
         guard let transitionContext = self.transitionContext else { return }
         transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
     }
