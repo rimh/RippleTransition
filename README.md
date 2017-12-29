@@ -1,6 +1,6 @@
 # RippleTransition
 
-Combine Ripple Effect and Fade Out to make animation transition.
+A simple transition with native ripple effect which is a combination between ripple and fade-out effect.
 
 ## Requirement
 Xcode 9, Swift 4, iOS 8 or above
@@ -8,10 +8,21 @@ Xcode 9, Swift 4, iOS 8 or above
 ## Demo
 ![ripple](https://user-images.githubusercontent.com/19208995/33179797-00a78948-d0ae-11e7-82a7-5c977ea61c5d.gif)
 
-## Usage
-```swift
-import UIKit
+## Installation
 
+RippleTransition is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'RippleTransition'
+```
+
+## Usage
+First, you need to import the module.
+```swift
+import RippleTransition
+```
+```swift
 class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
 
     let transition = RippleTransition()
