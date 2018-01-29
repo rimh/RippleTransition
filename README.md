@@ -40,6 +40,10 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
     }
 }
 ```
+Custom animation duration by 
+```swift
+transition.transitionTimeInterval = 1.0
+```
 ## License
 
 RippleTransition is available under the MIT license. See the LICENSE file for more info.
