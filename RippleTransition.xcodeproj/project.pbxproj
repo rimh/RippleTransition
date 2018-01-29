@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A01A71C201F6CD00085C9EA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A01A71B201F6CD00085C9EA /* SecondViewController.swift */; };
 		3A12AC1E1CE09E7700ABBFFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A12AC1D1CE09E7700ABBFFC /* AppDelegate.swift */; };
 		3A12AC201CE09E7700ABBFFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A12AC1F1CE09E7700ABBFFC /* ViewController.swift */; };
 		3A12AC231CE09E7700ABBFFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A12AC211CE09E7700ABBFFC /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A01A71B201F6CD00085C9EA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3A12AC1A1CE09E7700ABBFFC /* RippleTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RippleTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A12AC1D1CE09E7700ABBFFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A12AC1F1CE09E7700ABBFFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				3A12AC261CE09E7700ABBFFC /* LaunchScreen.storyboard */,
 				3A12AC291CE09E7700ABBFFC /* Info.plist */,
 				3A12AC4B1CE09E8D00ABBFFC /* RippleTransition.swift */,
+				3A01A71B201F6CD00085C9EA /* SecondViewController.swift */,
 			);
 			path = RippleTransition;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A01A71C201F6CD00085C9EA /* SecondViewController.swift in Sources */,
 				3A12AC201CE09E7700ABBFFC /* ViewController.swift in Sources */,
 				3A12AC1E1CE09E7700ABBFFC /* AppDelegate.swift in Sources */,
 				3A12AC4C1CE09E8D00ABBFFC /* RippleTransition.swift in Sources */,

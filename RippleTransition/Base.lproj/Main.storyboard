@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -55,10 +55,10 @@
             </objects>
             <point key="canvasLocation" x="322.39999999999998" y="283.80809595202402"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="siA-ln-eob">
             <objects>
-                <viewController id="3Jx-pF-gOO" customClass="ViewController" customModule="RippleTransition" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3Jx-pF-gOO" customClass="SecondViewController" customModule="RippleTransition" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Glo-KW-JCx"/>
                         <viewControllerLayoutGuide type="bottom" id="jVZ-2I-0q3"/>
@@ -66,12 +66,32 @@
                     <view key="view" contentMode="scaleToFill" id="NV6-Am-5FS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQb-75-nki">
+                                <rect key="frame" x="112.5" y="308.5" width="150" height="50"/>
+                                <color key="backgroundColor" red="0.34509803919999998" green="0.45098039220000002" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="cta-SN-KVH"/>
+                                    <constraint firstAttribute="height" constant="50" id="wDq-YO-4cG"/>
+                                </constraints>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToPreviousScene:" destination="3Jx-pF-gOO" eventType="touchUpInside" id="WdL-mN-EUK"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.75953243940000004" green="0.87538373709999995" blue="0.98344397670000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="dQb-75-nki" firstAttribute="centerY" secondItem="NV6-Am-5FS" secondAttribute="centerY" id="d7q-5G-McK"/>
+                            <constraint firstItem="dQb-75-nki" firstAttribute="centerX" secondItem="NV6-Am-5FS" secondAttribute="centerX" id="vnU-TQ-S1r"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vHR-hj-SF5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1199" y="284"/>
+            <point key="canvasLocation" x="1197.5999999999999" y="283.80809595202402"/>
         </scene>
     </scenes>
     <resources>

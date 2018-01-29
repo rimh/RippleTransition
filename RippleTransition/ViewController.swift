@@ -14,6 +14,9 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // custom animation duration
+        transition.transitionTimeInterval = 1.0
     }
     
     override func didReceiveMemoryWarning() {
