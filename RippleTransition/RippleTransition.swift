@@ -30,8 +30,10 @@ import UIKit
 
 public class RippleTransition : NSObject, UIViewControllerAnimatedTransitioning, CAAnimationDelegate {
     
+    public var transitionTimeInterval:TimeInterval = 5.0
+    
     public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 5.0
+        return transitionTimeInterval
     }
     
     weak var transitionContext:UIViewControllerContextTransitioning?
@@ -53,6 +55,7 @@ public class RippleTransition : NSObject, UIViewControllerAnimatedTransitioning,
         rippleAnimation(fromViewController.view)
         fadeOutAnimation(fromViewController.view)
         CATransaction.commit()
+
     }
     
     fileprivate func rippleAnimation(_ view:UIView)
@@ -68,15 +71,16 @@ public class RippleTransition : NSObject, UIViewControllerAnimatedTransitioning,
     
     fileprivate func fadeOutAnimation(_ view:UIView)
     {
-        let animation : CABasicAnimation = CABasicAnimation(keyPath: "opacity");
+        let animation = CABasicAnimation(keyPath: "opacity");
         animation.fromValue = 1
         animation.toValue = 0
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
         animation.fillMode = kCAFillModeForwards
         animation.isRemovedOnCompletion = false
-        animation.duration = self.transitionDuration(using: transitionContext)/2
-        animation.beginTime = self.transitionDuration(using: transitionContext)/2
+        animation.duration = self.transitionDuration(using: transitionContext)/2.5
+        animation.beginTime = 0
         view.layer.add(animation, forKey: nil)
+        
     }
     
     public func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
