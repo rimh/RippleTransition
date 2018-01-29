@@ -46,6 +46,10 @@ public class RippleTransition : NSObject, UIViewControllerAnimatedTransitioning,
         containerView.bringSubview(toFront: fromViewController.view)
         
         CATransaction.begin()
+        CATransaction.setCompletionBlock({
+            toViewController.view.layer.removeAllAnimations()
+            fromViewController.view.layer.removeAllAnimations()
+        })
         rippleAnimation(fromViewController.view)
         fadeOutAnimation(fromViewController.view)
         CATransaction.commit()
