@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "RippleTransition"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "A simple transition with native ripple effect."
 
   s.description  = 'A simple transition with native ripple effect. It is a combination between ripple and fade-out effect.'
