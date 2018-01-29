@@ -3,7 +3,7 @@
 //  RippleTransition
 //
 //  Created by Ming on 5/9/16.
-//  Copyright © 2016 Sleepy Sheep - Ming. All rights reserved.
+// Copyright (c) 2016 Rimh(Ming) To (https://github.com/rimh/)
 //
 
 import UIKit
