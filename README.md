@@ -1,4 +1,7 @@
 # RippleTransition
+[![Version](https://img.shields.io/cocoapods/v/RippleTransition.svg?style=flat)](http://cocoapods.org/pods/RippleTransition)
+[![License](https://img.shields.io/cocoapods/l/RippleTransition.svg?style=flat)](http://cocoapods.org/pods/RippleTransition)
+[![Platform](https://img.shields.io/cocoapods/p/RippleTransition.svg?style=flat)](http://cocoapods.org/pods/RippleTransition)
 
 A simple transition with native ripple effect which is a combination between ripple and fade-out effect.
 
